@@ -17,8 +17,8 @@ public class ClientQuardexa {
 	
 	public static void main (String [] args) {
 		Scanner keyboard = new Scanner(System.in);
-		System.out.println("------- Quardexa by Zixiong Lin  & jabier sanchez biyal -------");
-		System.out.println("           --------------------------------------");
+		System.out.println("------- Welcome to Quardexa, by Zixiong Lin  & Javier Sánchez Villar -------");
+		System.out.println("       --------------------------------------------------------------");
 		System.out.println();
 		boolean exit;
 		titleChanger();
@@ -30,8 +30,8 @@ public class ClientQuardexa {
 		
 		// Keyboard Input
 		Scanner keyboard = new Scanner(System.in);
-		System.out.println("	--- Vamos a cambiar el titulo!!! ---");
-		System.out.println("	        ---------------------");
+		System.out.println("	--- Cambio de título ---");
+		System.out.println("	 ---------------------");
 		System.out.println();
 		boolean existPath = false;
 		String toModifyTile = "";
@@ -56,7 +56,7 @@ public class ClientQuardexa {
 					existPath = false;
 				}
 			} catch (javax.ws.rs.NotFoundException e) {
-				System.out.println("	¿Tú eres tonto o masticas agua? Introduce un ID que sirva.");
+				System.out.println("	ID incorrecto, por favor introduce un ID que sirva.");
 				System.out.println();
 				existPath = false;
 			}
