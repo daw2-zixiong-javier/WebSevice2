@@ -2,7 +2,7 @@
 <jaxb:bindings
 	xmlns:jaxb="http://java.sun.com/xml/ns/jaxb"
 	xmlns:xsd="http://www.w3.org/2001/XMLSchema"
-	schemaLocation="japon-token.xsd"
+	schemaLocation="token.xsd"
 	jaxb:version="2.0">
 	<jaxb:bindings
 		node="/xsd:schema/xsd:element[@name='result']">
