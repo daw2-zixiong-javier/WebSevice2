@@ -1,0 +1,84 @@
+<!-- Created with Liquid Technologies Online Tools 1.0 (https://www.liquid-technologies.com) -->
+<xs:schema attributeFormDefault="unqualified" elementFormDefault="qualified" xmlns:xs="http://www.w3.org/2001/XMLSchema">
+  <xs:element name="result">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element name="sessid" type="xs:string" />
+        <xs:element name="session_name" type="xs:string" />
+        <xs:element name="token" type="xs:string" />
+        <xs:element name="user">
+          <xs:complexType>
+            <xs:sequence>
+              <xs:element name="uid" type="xs:unsignedByte" />
+              <xs:element name="name" type="xs:string" />
+              <xs:element name="mail" type="xs:string" />
+              <xs:element name="theme" />
+              <xs:element name="signature" />
+              <xs:element name="signature_format" />
+              <xs:element name="created" type="xs:unsignedInt" />
+              <xs:element name="access" type="xs:unsignedInt" />
+              <xs:element name="login" type="xs:unsignedInt" />
+              <xs:element name="status" type="xs:unsignedByte" />
+              <xs:element name="timezone" type="xs:string" />
+              <xs:element name="language" />
+              <xs:element name="picture" />
+              <xs:element name="init" type="xs:string" />
+              <xs:element name="data" />
+              <xs:element name="roles">
+                <xs:complexType>
+                  <xs:sequence>
+                    <xs:element maxOccurs="unbounded" name="item" type="xs:string" />
+                  </xs:sequence>
+                  <xs:attribute name="is_array" type="xs:boolean" use="required" />
+                </xs:complexType>
+              </xs:element>
+              <xs:element name="rdf_mapping">
+                <xs:complexType>
+                  <xs:sequence>
+                    <xs:element name="rdftype">
+                      <xs:complexType>
+                        <xs:sequence>
+                          <xs:element name="item" type="xs:string" />
+                        </xs:sequence>
+                        <xs:attribute name="is_array" type="xs:boolean" use="required" />
+                      </xs:complexType>
+                    </xs:element>
+                    <xs:element name="name">
+                      <xs:complexType>
+                        <xs:sequence>
+                          <xs:element name="predicates">
+                            <xs:complexType>
+                              <xs:sequence>
+                                <xs:element name="item" type="xs:string" />
+                              </xs:sequence>
+                              <xs:attribute name="is_array" type="xs:boolean" use="required" />
+                            </xs:complexType>
+                          </xs:element>
+                        </xs:sequence>
+                      </xs:complexType>
+                    </xs:element>
+                    <xs:element name="homepage">
+                      <xs:complexType>
+                        <xs:sequence>
+                          <xs:element name="predicates">
+                            <xs:complexType>
+                              <xs:sequence>
+                                <xs:element name="item" type="xs:string" />
+                              </xs:sequence>
+                              <xs:attribute name="is_array" type="xs:boolean" use="required" />
+                            </xs:complexType>
+                          </xs:element>
+                          <xs:element name="type" type="xs:string" />
+                        </xs:sequence>
+                      </xs:complexType>
+                    </xs:element>
+                  </xs:sequence>
+                </xs:complexType>
+              </xs:element>
+            </xs:sequence>
+          </xs:complexType>
+        </xs:element>
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+</xs:schema>
