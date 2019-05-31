@@ -20,7 +20,7 @@ public class SimpleService_P1_Server{
     }
     
     public static void main(String args[]) throws java.lang.Exception { 
-        new SimpleService_P1_Server();
+        SimpleService_P1_Server s = new SimpleService_P1_Server();
         System.out.println("Server ready..."); 
         
         Thread.sleep(15 * 60 * 1000); 

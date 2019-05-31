@@ -13,13 +13,14 @@ public class SoapAsyncRequest extends Thread {
 	}
 	
 	public String getModifiedTitle() {
-		System.out.println("     Introduce el nuevo titulo:");
-		Scanner s = new Scanner(System.in);
-		return s.nextLine();
+		return modifiedTitle;
+		//System.out.println("     Introduce el nuevo titulo:");
+		//Scanner s = new Scanner(System.in);
+		//return s.nextLine();
 	}
 	
 	public void run() {
 		SimpleService_P1_Client soapClient = new SimpleService_P1_Client();
-		//this.modifiedTitle = soapClient.modifyDrupalTitle(toModifyTile);
+		this.modifiedTitle = soapClient.modifyDrupalTitle(toModifyTile);
 	}
 }
